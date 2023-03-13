@@ -1,45 +1,57 @@
 /* Стилизация кнопки */
 
+:root {
+    --blue: #4263EB;
+    --blue_alt: #2342C0;
+    --purple: #7048E8;
+    --purple_alt: #5028C6;
+    --grey: #495057;
+    --lightgrey: #ACB5BD;
+    --black: #212429;
+    --white: #ffffff;
+  }
+
 .btn{
-    width: 189px;
-    height: 48px;
+    cursor: pointer;
+    background: none;
+    padding: 15px 66px 14px 66px;
     border-radius: 8px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: white;
+    color: var(--white);
     border: none;
     transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out, border 200ms ease-in-out;
 }
 
-.btn__primary{
-    background-color: #4263EB;
+.btn_primary{
+    background-color: var(--blue);
 }
 
-.btn__primary:hover:enabled{
-    background-color: #2342C0;
+.btn_primary:hover:enabled{
+    background-color: var(--blue_alt);
 }
 
-.btn__secondary{
-    background-color: #7048E8;
+.btn_secondary{
+    background-color: var(--purple);
 }
 
-.btn__secondary:hover:enabled{
-    background-color: #5028C6;
+.btn_secondary:hover:enabled{
+    background-color: var(--purple_alt);
 }
 
-.btn__alternate{
-    border: 1px solid #ACB5BD;
-    color: #495057;
+.btn_alternate{
+    border: 1px solid var(--lightgrey);
+    color: var(--grey);
 }
 
-.btn__alternate:hover:enabled{
-    border: 1px solid #212429;
+.btn_alternate:hover:enabled{
+    border: 1px solid var(--black);
 }
 
-
-:disabled{
-    opacity: 50%;
+.btn:disabled{
+    opacity: 60%;
+    pointer-events: none;
 }
