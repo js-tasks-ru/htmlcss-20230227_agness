@@ -1,16 +1,4 @@
 /* Стилизация кнопки */
-
-:root {
-    --blue: #4263EB;
-    --blue_alt: #2342C0;
-    --purple: #7048E8;
-    --purple_alt: #5028C6;
-    --grey: #495057;
-    --lightgrey: #ACB5BD;
-    --black: #212429;
-    --white: #ffffff;
-  }
-
 .btn{
     cursor: pointer;
     background: none;
